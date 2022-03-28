@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: .9rem;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, dt {
+  font-style: italic;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin-bottom: .8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.banner-text h2, .banner-text p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  padding: .3rem 1.2rem;
+}
+
+main > img {
+  grid-area: banner;
+  max-width: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "banner banner banner" "box1 box2 box3";
+  gap: .75rem;
+}
+
+.banner-text {
+  padding: 1.5rem 1rem;
+  align-self: end;
+  grid-area: banner;
+  color: #fff;
+}
+
+figure {
+  margin: 0;
+}
